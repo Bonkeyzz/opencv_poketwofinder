@@ -17,15 +17,14 @@ def match_features_and_draw(img1, img2, name, result, sort=True):
 	orb = cv2.ORB_create(nfeatures=500)
 	kp1, des1 = orb.detectAndCompute(img1, None)
 	kp2, des2 = orb.detectAndCompute(img2, None)
-	# font
+	# The font to display this in (hate it)
 	font = cv2.FONT_HERSHEY_DUPLEX
-	# org
+	# Org - Position of text
 	org = (0, 25)
-	# fontScale
+	# Scale of the font
 	fontScale = 1
-	# Blue color in BGR
+	# Cyan color
 	color = (255, 255, 5)
-	# Line thickness of 2 px
 	thickness = 2
 
 	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
