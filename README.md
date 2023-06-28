@@ -2,8 +2,7 @@
 
 Helper to identify poketwo spawns with OpenCV.
 
-This program is currently just a PoC, i'm just trying to learn OpenCV. I originally planned on making this into an automatic catcher but this was a long ago. As of now i'm not planning on implementing integrations with discord myself as i'm not interested in catching pokemon using this method. 
-If discord integration (self-bot probably) is properly implemented you are at risk of getting banned from using Poketwo (and maybe discord as well cause self-bots) by using this script.
+This script uses OpenCV's feature matching algorithm to determine which pokemon is in the *Source* image. It was planned to be an automatic catcher a long time ago but i abandoned that idea as i don't find any need for such tool, not to add the risk of getting banned from using poketwo (and discord, if it was implemented into a self-bot).
 
 ***THIS WILL NOT CATCH POKEMON AUTOMATICALLY IN DISCORD***
 
