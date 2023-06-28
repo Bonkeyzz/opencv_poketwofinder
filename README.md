@@ -9,7 +9,7 @@ If discord integration (self-bot probably) is properly implemented you are at ri
 
 ## Screenshot:
 
-![image](https://github.com/Bonkeyzz/py_poketwofinder/assets/23555978/3f3878ff-64e5-479f-bf98-44598f5322f1)
+![image](https://github.com/Bonkeyzz/opencv_poketwofinder/assets/23555978/c53d2e85-fd3e-4d0a-bdf7-9aeb59483a1a)
 
 ## How to use
 
