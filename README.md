@@ -22,3 +22,4 @@ If you want to add your own templates in the `templates` folder, use [Bulbapedia
 **Make sure to include ONLY the name of the pokemon in the template picture e.g. `deino.png`.**
 
 
+If you like my work, buy me a coffee :^) **[Donate](https://ko-fi.com/bonkeyzz)**
