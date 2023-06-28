@@ -18,7 +18,7 @@ If discord integration (self-bot probably) is properly implemented you are at ri
 3. In the script you can edit the `poketwo_spawn` variable to point into any file from the folder `test_poketwo_spawns`
 4. You can run it with the command: `python matcher.py`
 
-If you want to add your own templates in the `templates` folder, use [Bulbapedia](bulbapedia.bulbagarden.net/). Use the first pokemon picture from the site.
+If you want to add your own templates in the `templates` folder, use [Bulbapedia](https://bulbapedia.bulbagarden.net/). Use the first pokemon picture from the site.
 **Make sure to include ONLY the name of the pokemon in the template picture e.g. `deino.png`.**
 
 
