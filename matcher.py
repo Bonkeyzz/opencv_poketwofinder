@@ -29,7 +29,7 @@ def match_features_and_draw(img1, img2, name, result, sort=True):
 	img1 = cv2.putText(img1, 'Template', org, font, fontScale, color, thickness, cv2.LINE_AA)
 	match_img = cv2.drawMatches(img1, kp1, img2, kp2, matches[:50], None)
 
-	cv2.imshow(f"Source matches with: '{name}' Score: {result}", match_img)
+	cv2.imshow(f"Source image contains pokemon: '{name}' Score: {result}", match_img)
 	cv2.waitKey()
 
 class Cv2Image():
@@ -45,7 +45,7 @@ template_list = []
 
 #NOTE - You can change this to any test spawns you want.
 #TODO - Integrate into discord as a self-bot application.
-poketwo_spawn = Cv2Image('./test_poketwo_spawns/poketwo_esp.png')
+poketwo_spawn = Cv2Image('./test_poketwo_spawns/poketwo_deino.png')
 
 def check_matching(src, templ): 
 	#FIXME - Matching may fail if picture is flipped
@@ -57,6 +57,11 @@ def check_matching(src, templ):
 	#if match_len_flipped >= match_len: return match_len_flipped
 	#else: 
 	return len(matches)
+
+def path2pokename(path:str):
+	path = path.replace("./templates/", "")
+	path = path.replace(".png", "")
+	return path.capitalize()
 
 def jpg2png(input: str):
 	im1 = Image.open(input, 'r')
@@ -87,8 +92,8 @@ def main():
 		match_canditates.append({"name": str(template), "template": template.template, "result": check_matching(poketwo_spawn.template, template.template)})
 	match_canditates.sort(key=lambda x: x['result'])
 	best_match = match_canditates.pop()
-	print(f"[*] Potential Match: '{best_match['name']}' with score: {best_match['result']}")
-	match_features_and_draw(best_match['template'], poketwo_spawn.template, best_match['name'], best_match['result'])
+	print(f"[*] Potential Match: '{path2pokename(best_match['name'])}' with score: {best_match['result']}")
+	match_features_and_draw(best_match['template'], poketwo_spawn.template, path2pokename(best_match['name']), best_match['result'])
 
 if __name__ == "__main__":
 	main()
