@@ -6,7 +6,7 @@ This script uses OpenCV's feature matching algorithm to determine which pokemon 
 
 ***THIS WILL NOT CATCH POKEMON AUTOMATICALLY IN DISCORD AND SUCH FEATURE WILL NOT BE ADDED***
 
-## Screenshot:
+## Screenshot
 
 ![image](https://github.com/Bonkeyzz/opencv_poketwofinder/assets/23555978/c53d2e85-fd3e-4d0a-bdf7-9aeb59483a1a)
 
